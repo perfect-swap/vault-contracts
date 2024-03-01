@@ -1,0 +1,178 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x87c208DAD6AD9329Eee3a4dF105D29302869b110",
+    "txHash": "0x1f9a2e17cbd24a7a2e8cde660607104f7a10fb71e9503c0dde6cd143619334c0"
+  },
+  "proxies": [
+    {
+      "address": "0x577E2F75A9412EbaE6c354D1c067D1d17fd675Fc",
+      "txHash": "0x6d50d2e21dc0af1c394786cde26c27c68176de240708592d94b7b3bcf3457e1a",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "bc35d67db3d6d811dba88b51ace29936bebec2b4383385fd14ee190699f3d753": {
+      "address": "0x544Db3C2677eCd78F7FEd3bcD79807F863554024",
+      "txHash": "0xe43c9a1da4808bd79abbe374e17164f5e2b8111137ede13d59dc130b050a03c0",
+      "layout": {
+        "solcVersion": "0.8.19",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "contracts\\PRFCT\\infra\\PrfctFeeConfigurator.sol:264",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "contracts\\PRFCT\\infra\\PrfctFeeConfigurator.sol:269"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "contracts\\PRFCT\\infra\\PrfctFeeConfigurator.sol:378"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\PRFCT\\infra\\PrfctFeeConfigurator.sol:402"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\PRFCT\\infra\\PrfctFeeConfigurator.sol:474"
+          },
+          {
+            "label": "keeper",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address",
+            "contract": "PrfctFeeConfigurator",
+            "src": "contracts\\PRFCT\\infra\\PrfctFeeConfigurator.sol:493"
+          },
+          {
+            "label": "totalLimit",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_uint256",
+            "contract": "PrfctFeeConfigurator",
+            "src": "contracts\\PRFCT\\infra\\PrfctFeeConfigurator.sol:494"
+          },
+          {
+            "label": "stratFeeId",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "PrfctFeeConfigurator",
+            "src": "contracts\\PRFCT\\infra\\PrfctFeeConfigurator.sol:497"
+          },
+          {
+            "label": "feeCategory",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_mapping(t_uint256,t_struct(FeeCategory)576_storage)",
+            "contract": "PrfctFeeConfigurator",
+            "src": "contracts\\PRFCT\\infra\\PrfctFeeConfigurator.sol:498"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(FeeCategory)576_storage)": {
+            "label": "mapping(uint256 => struct PrfctFeeConfigurator.FeeCategory)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(FeeCategory)576_storage": {
+            "label": "struct PrfctFeeConfigurator.FeeCategory",
+            "members": [
+              {
+                "label": "total",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "prfct",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "call",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "strategist",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "label",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "active",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "192"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
